@@ -1,0 +1,41 @@
+# Ignore all test-related files
+test*
+*test*
+tests/
+__tests__/
+
+# Ignore all SQLAlchemy-related files
+sqlalchemy*
+*sqlalchemy*
+
+# Ignore ORM_sqlalchemy files
+ORM_sqlalchemy*
+*ORM_sqlalchemy*
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore SQLite DB files
+*.db
+
+# Ignore Alembic compiled cache
+alembic/__pycache__/
+versions/__pycache__/
+
+# Ignore environment folders
+.env/
+.venv/
+venv/
+ENV/
+env/
+
+# Ignore common IDE files
+.vscode/
+.idea/
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
