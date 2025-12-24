@@ -1,41 +1,44 @@
-# Ignore all test-related files
-test*
-*test*
-tests/
-__tests__/
-
-# Ignore all SQLAlchemy-related files
-sqlalchemy*
-*sqlalchemy*
-
-# Ignore ORM_sqlalchemy files
-ORM_sqlalchemy*
-*ORM_sqlalchemy*
-
-# Ignore Python cache files
+# ==============================
+# Python bytecode
+# ==============================
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Ignore SQLite DB files
-*.db
-
-# Ignore Alembic compiled cache
-alembic/__pycache__/
-versions/__pycache__/
-
-# Ignore environment folders
-.env/
-.venv/
+# ==============================
+# Virtual environments
+# ==============================
 venv/
-ENV/
 env/
+.mylangchain/
+.mylangchain/*
+*.venv
+.venv/
 
-# Ignore common IDE files
+# ==============================
+# OS / Editor files
+# ==============================
+.DS_Store
+Thumbs.db
 .vscode/
 .idea/
 
-# Ignore OS-generated files
-.DS_Store
-Thumbs.db
+# ==============================
+# Logs & temp files
+# ==============================
+*.log
+*.tmp
+
+# ==============================
+# Explicitly ALLOW required files
+# (defensive allowlist)
+# ==============================
+!.gitignore
+!requirements.txt
+!alembic.ini
+!sem3assignment.db
+
+# Allow main project folders
+!sem3sqlalchemy/
+!test_alembic/
